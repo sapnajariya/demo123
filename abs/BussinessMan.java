@@ -1,9 +1,6 @@
 package abs;
-import java.io.*;
-public interface RichMan {
-public abstract void donation();
-public abstract void party();
-public class BussinessMAn {
+
+public class BussinessMan implements RichMan  {
 	public void donation()
 	{
 		System.out.println("help to other by donation");
@@ -16,4 +13,3 @@ public class BussinessMAn {
 }
 
 
-}

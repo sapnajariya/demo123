@@ -1,20 +1,20 @@
 package abs;
 
 public final class Imutable {
-private static String COLGNAME="nit Bhopal";
-private static int fee=300000;
+private final String COLGNAME;
+private final int fee;
 public Imutable(String COLGNAME,int fee)
 {
 	
 }
 
-	private static String getColgname() {
+	public String getColgname() {
 	return COLGNAME;
 }
 
 
 
-private static int getFee() {
+public int getFee() {
 	return fee;
 }
 
@@ -22,7 +22,7 @@ private static int getFee() {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Imutable i=new Imutable("COLGNAME",fee);
+		Imutable i=new Imutable("nit Bhopal",300000);
 		System.out.print(i.getColgname()+" "+i.getFee());
 
 	}
